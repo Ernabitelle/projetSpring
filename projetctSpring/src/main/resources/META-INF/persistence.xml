@@ -1,0 +1,18 @@
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence
+http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd" version="2.1">
+	<persistence-unit name="university" transaction-type="RESOURCE_LOCAL">
+	<!-- cest une unité dpersistence qui se fereur une seule base -->
+		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+		<properties>
+			<!-- Création de l url : jdbc bd ://hostname:port/bd name  -->
+			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://bx3elievfbdq5utfmuf3-mysql.services.clever-cloud.com:3306/bx3elievfbdq5utfmuf3" />
+			<property name="javax.persistence.jdbc.user" value="u2urjfud36he5eos" />
+			<property name="javax.persistence.jdbc.password" value="8WcdImhmhbT1hUchugZk" />
+			<property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver" />
+			<property name="hibernate.show_sql" value="true" />
+			<property name="hibernate.hbm2ddl.auto" value="update"/>
+			<!-- <property name="javax.persistence.schema-generation.database.action" value="drop-and-create" /> -->
+			
+		</properties>
+	</persistence-unit>
+</persistence>
